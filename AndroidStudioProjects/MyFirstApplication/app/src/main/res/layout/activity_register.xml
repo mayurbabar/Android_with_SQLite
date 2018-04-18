@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mayur.myfirstapplication.RegisterActivity">
+
+    <LinearLayout
+        android:id="@+id/nameRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp">
+
+        <EditText
+            android:id="@+id/firstNameSection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="First name"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/lastNameSection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="last name"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/emailSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nameRow"
+        android:hint="Email id"
+        android:layout_margin="4dp"/>
+
+    <EditText
+        android:id="@+id/passSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emailSection"
+        android:hint="password"
+        android:inputType="textPassword"
+        android:layout_margin="4dp"/>
+
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passSection"
+        android:layout_centerHorizontal="true"
+        android:text="REGISTER"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>
